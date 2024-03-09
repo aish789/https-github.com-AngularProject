@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+body {
+  background: #c0c0c0; 
+  font-family: Raleway, sans-serif;
+  color: #666;
+}
+.v1{
+    color: red;
+
+}
+.hide {
+	display: none;
+  }
+  .password-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .password-input {
+    padding-right: 30px; /* Space for the eye icons */
+  }
+  
+  .eye-icons {
+    position: relative;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-250%);
+    margin-left: 90%;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .eye-hide {
+    display: none;
+  }
+//   .inner-addon { 
+// 	  position: relative; 
+//   }
+//   .inner-addon .fa {
+// 	position: absolute;
+// 	padding: 10px 30px;
+// 	z-index: 100;
+// 	cursor: pointer;
+//   }
+  
+//   .inner-addon .fa {
+// 	position: absolute;
+// 	padding: 10px 1px;
+// 	z-index: 100;
+// 	cursor: pointer;
+//   }
+// .password-input {
+//     position: relative;
+//   }
+  
+//   .password-input input {
+//     padding-right: 30px; /* Space for the eye icon */
+//   }
+  
+//   .password-input button {
+//     position: absolute;
+//     right: 8px;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     background: none;
+//     border: none;
+//     cursor: pointer;
+//   }
+  
+.login {
+  margin:45px auto;
+  padding: 40px 50px;
+  max-width: 360px;
+  border-radius: 5px;
+  background: #fff;
+ // box-shadow: 1px 1px 1px #666;
+ box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+  .login input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 14px 12px;
+    font-size: 16px;
+    border-radius: 2px; 
+    font-family: Raleway, sans-serif;
+  }
+
+.login input[type=text],
+.login input[type=password] {
+  border: 1px solid #c0c0c0;
+  transition: .2s;
+}
+
+.login input[type=text]:hover {
+  border-color: #F44336;
+  outline: none;
+  transition: all .2s ease-in-out;
+} 
+
+.login input[type=submit] {
+  border: none;
+  background: #5b33ec;
+  color: white;
+  font-weight: bold;  
+  transition: 0.2s;
+  margin: 20px 0px;
+}
+
+.login input[type=submit]:hover {
+  background: #F44336;  
+}
+
+  .login h2 {
+    margin: 20px 0 0; 
+    color: #3a18b6;
+    font-size: 28px;
+  }
+
+.login p {
+  margin-bottom: 40px;
+ // font-size: 21px;
+}
+
+.links {
+  display: table;
+  width: 100%;  
+  box-sizing: border-box;
+  border-top: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+  }
+
+.links a {
+  display: table-cell;
+  padding-top: 10px;
+}
+
+.links a:first-child {
+  text-align: left;
+}
+
+.links a:last-child {
+  text-align: right;
+}
+
+  .login h2,
+  .login p,
+  .login a {
+    text-align: center;    
+  }
+
+.login a {
+  text-decoration: none;  
+  font-size: .8em;
+}
+
+.login a:visited {
+  color: inherit;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}

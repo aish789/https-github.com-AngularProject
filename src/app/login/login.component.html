@@ -1,0 +1,34 @@
+<form class="login">
+<h2>Welcome, User!</h2>
+<p>Please log in</p>
+
+<input type="text" name="email" placeholder="Enter Email"  [(ngModel)]="email" #emailControl="ngModel" required>
+<div *ngIf="emailControl.touched">
+<p class="v1" *ngIf="emailControl.errors?.['required']">Email is a required field !</p>
+</div>
+
+<input  placeholder=" Enter Password" [(ngModel)]="password" type="Password"
+    pattern="(?=.[a-z])(?=.[A-Z])(?=.[0-9])(?=.[$@$#!%?&])[A-Za-z\d$@$!%?&].{8,}"
+    name="Password" #passwordControl="ngModel"
+    [type]="showPassword ? 'text' : 'Password'" required>
+
+<i alt="show"
+class="fa fa-eye eye-icons  "
+(click)="showPassword = !showPassword"
+[class.hide]="showPassword"></i>
+
+<i alt="hide"
+class="fa fa-eye-slash eye-icons  "
+(click)="showPassword = !showPassword"
+[class.hide]="!showPassword"></i>
+
+<div *ngIf="passwordControl.touched">
+<p class="v1" *ngIf="passwordControl.errors?.['required']">Password is a required field!</p>
+</div>
+
+<input type="submit" (click)="login()" value="Log In" />
+<div class="links">
+<a href="#">Forgot password</a>
+<a href="#">Register</a>
+</div>
+</form>
