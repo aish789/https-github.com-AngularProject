@@ -1,0 +1,67 @@
+##To implement the described solution in Angular 15 and Node.js + Express. Below are the steps for both the Angular and Node.js parts.
+
+Angular 15 Solution:
+Step 1: Create Angular Project
+Install Angular CLI globally if not installed.
+
+npm install -g @angular/cli
+Create a new Angular project.
+
+ng new your-angular-app
+Navigate to the project directory.
+
+cd your-angular-app
+Step 2: Implement Login Screen
+Create a login component.
+
+ng generate component login
+Implement the login screen in login.component.html and the necessary logic in login.component.ts.
+
+Step 3: Implement Dashboard Component
+Create a dashboard component.
+
+ng generate component dashboard
+Implement the dashboard screen with an HTML table in dashboard.component.html and the necessary logic in dashboard.component.ts.
+
+Implement a service to handle authentication and API requests.
+
+Step 4: Routing
+Set up routing in app-routing.module.ts to navigate between the login and dashboard components.
+Step 5: Run Angular App
+Run the Angular app.
+ng serve
+
+#######################################################################################################################################
+
+Node.js + Express Solution:
+Step 1: Set Up Node.js + Express Project
+Create a new Node.js project.
+mkdir your-nodejs-app
+cd your-nodejs-app
+npm init -y
+Install necessary packages.
+
+npm install express body-parser
+Step 2: Implement Express Server
+Create an Express server in a file (e.g., app.js).
+
+Set up the server to handle POST requests to /api/login and GET requests to /api/getEmployeeInfo.
+Implement authentication logic in the login API and return the appropriate response.
+
+Implement the employee info retrieval logic in the getEmployeeInfo API.
+
+Step 3: Run Express Server
+Run the Express server.
+node app.js
+
+Instructions to Compile and Run:
+Compile and run the Angular app using ng serve or any other preferred method.
+
+Start the Express server using node app.js (usually at server http://localhost:4000) or any other port number or preferred method.
+
+Access the Angular app in your browser (usually at http://localhost:4200) and interact with the login and dashboard screens.
+
+Ensure that your Node.js server is running and accessible for API requests.
+
+Note: You would need to handle CORS if your Angular app and Node.js server are running on different ports.
+
